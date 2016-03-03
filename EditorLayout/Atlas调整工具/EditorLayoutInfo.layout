@@ -1,0 +1,36 @@
+XPox: 137
+YPox: 169
+Width: 1032
+Height: 488
+DivisionInfo:
+- SpliterID: "Atlas调整工具_HSpliterCtrl_1"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1"
+  SplitOffset: 30
+- SpliterID: "Atlas调整工具_HSpliterCtrl_8"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1/Atlas调整工具_HSpliterCtrl_8"
+  SplitOffset: 30
+  SpliterOffsetInv: true
+- SpliterID: "Atlas调整工具_VSpliterCtrl_10"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1/Atlas调整工具_HSpliterCtrl_8/Atlas调整工具_HBoxCtrl_9/Atlas调整工具_VSpliterCtrl_10"
+  SplitOffset: 233
+- SpliterID: "Atlas调整工具_VSpliterCtrl_13"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1/Atlas调整工具_HSpliterCtrl_8/Atlas调整工具_HBoxCtrl_9/Atlas调整工具_VSpliterCtrl_10/Atlas调整工具_VSpliterCtrl_13"
+  SplitOffset: 230
+  SpliterOffsetInv: true
+- SpliterID: "Atlas调整工具_VSpliterCtrl_124"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1/Atlas调整工具_HSpliterCtrl_8/Atlas调整工具_HBoxCtrl_9/Atlas调整工具_VSpliterCtrl_10/Atlas调整工具_VSpliterCtrl_13/Atlas调整工具_VBoxCtrl_14/Atlas调整工具_VSpliterCtrl_124"
+  SplitOffset: 296
+- SpliterID: "Atlas调整工具_HSpliterCtrl_126"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1/Atlas调整工具_HSpliterCtrl_8/Atlas调整工具_HBoxCtrl_9/Atlas调整工具_VSpliterCtrl_10/Atlas调整工具_VSpliterCtrl_13/Atlas调整工具_VBoxCtrl_14/Atlas调整工具_VSpliterCtrl_124/Atlas调整工具_VBoxCtrl_125/Atlas调整工具_HSpliterCtrl_126"
+  SplitOffset: 192.6667
+- SpliterID: "Atlas调整工具_HSpliterCtrl_130"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1/Atlas调整工具_HSpliterCtrl_8/Atlas调整工具_HBoxCtrl_9/Atlas调整工具_VSpliterCtrl_10/Atlas调整工具_VSpliterCtrl_13/Atlas调整工具_VBoxCtrl_14/Atlas调整工具_VSpliterCtrl_124/Atlas调整工具_VBoxCtrl_125/Atlas调整工具_HSpliterCtrl_126/Atlas调整工具_HSpliterCtrl_130"
+  SplitOffset: 200
+  SpliterOffsetInv: true
+- SpliterID: "Atlas调整工具_HSpliterCtrl_137"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1/Atlas调整工具_HSpliterCtrl_8/Atlas调整工具_HBoxCtrl_9/Atlas调整工具_VSpliterCtrl_10/Atlas调整工具_VSpliterCtrl_13/Atlas调整工具_VBoxCtrl_14/Atlas调整工具_VSpliterCtrl_124/Atlas调整工具_VBoxCtrl_136/Atlas调整工具_HSpliterCtrl_137"
+  SplitOffset: 192.6667
+- SpliterID: "Atlas调整工具_HSpliterCtrl_141"
+  SpliterPath: "Atlas调整工具_HSpliterCtrl_1/Atlas调整工具_HSpliterCtrl_8/Atlas调整工具_HBoxCtrl_9/Atlas调整工具_VSpliterCtrl_10/Atlas调整工具_VSpliterCtrl_13/Atlas调整工具_VBoxCtrl_14/Atlas调整工具_VSpliterCtrl_124/Atlas调整工具_VBoxCtrl_136/Atlas调整工具_HSpliterCtrl_137/Atlas调整工具_HSpliterCtrl_141"
+  SplitOffset: 200
+  SpliterOffsetInv: true

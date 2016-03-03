@@ -1,0 +1,18 @@
+XPox: 62
+YPox: 280
+Width: 1032
+Height: 488
+DivisionInfo:
+- SpliterID: "特效动画编辑器_HSpliterCtrl_24"
+  SpliterPath: "特效动画编辑器_HSpliterCtrl_24"
+  SplitOffset: 30
+- SpliterID: "特效动画编辑器_HSpliterCtrl_32"
+  SpliterPath: "特效动画编辑器_HSpliterCtrl_24/特效动画编辑器_HSpliterCtrl_32"
+  SplitOffset: 30
+- SpliterID: "特效动画编辑器_VSpliterCtrl_35"
+  SpliterPath: "特效动画编辑器_HSpliterCtrl_24/特效动画编辑器_HSpliterCtrl_32/特效动画编辑器_VSpliterCtrl_35"
+  SplitOffset: 200
+- SpliterID: "特效动画编辑器_VSpliterCtrl_38"
+  SpliterPath: "特效动画编辑器_HSpliterCtrl_24/特效动画编辑器_HSpliterCtrl_32/特效动画编辑器_VSpliterCtrl_35/特效动画编辑器_VSpliterCtrl_38"
+  SplitOffset: 341
+  SpliterOffsetInv: true

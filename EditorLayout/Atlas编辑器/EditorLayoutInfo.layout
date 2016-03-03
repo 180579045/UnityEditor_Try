@@ -1,0 +1,27 @@
+XPox: 131
+YPox: 218
+Width: 1032
+Height: 488
+DivisionInfo:
+- SpliterID: "Atlas编辑器_HSpliterCtrl_1"
+  SpliterPath: "Atlas编辑器_HSpliterCtrl_1"
+  SplitOffset: 30
+- SpliterID: "Atlas编辑器_HSpliterCtrl_8"
+  SpliterPath: "Atlas编辑器_HSpliterCtrl_1/Atlas编辑器_HSpliterCtrl_8"
+  SplitOffset: 30
+  SpliterOffsetInv: true
+- SpliterID: "Atlas编辑器_VSpliterCtrl_10"
+  SpliterPath: "Atlas编辑器_HSpliterCtrl_1/Atlas编辑器_HSpliterCtrl_8/Atlas编辑器_HBoxCtrl_9/Atlas编辑器_VSpliterCtrl_10"
+  SplitOffset: 339
+- SpliterID: "Atlas编辑器_HSpliterCtrl_12"
+  SpliterPath: "Atlas编辑器_HSpliterCtrl_1/Atlas编辑器_HSpliterCtrl_8/Atlas编辑器_HBoxCtrl_9/Atlas编辑器_VSpliterCtrl_10/Atlas编辑器_VBoxCtrl_11/Atlas编辑器_HSpliterCtrl_12"
+  SplitOffset: 260
+  SpliterOffsetInv: true
+- SpliterID: "Atlas编辑器_HSpliterCtrl_16"
+  SpliterPath: "Atlas编辑器_HSpliterCtrl_1/Atlas编辑器_HSpliterCtrl_8/Atlas编辑器_HBoxCtrl_9/Atlas编辑器_VSpliterCtrl_10/Atlas编辑器_VBoxCtrl_11/Atlas编辑器_HSpliterCtrl_12/Atlas编辑器_VBoxCtrl_15/Atlas编辑器_HSpliterCtrl_16"
+  SplitOffset: 240
+  SpliterOffsetInv: true
+- SpliterID: "Atlas编辑器_VSpliterCtrl_24"
+  SpliterPath: "Atlas编辑器_HSpliterCtrl_1/Atlas编辑器_HSpliterCtrl_8/Atlas编辑器_HBoxCtrl_9/Atlas编辑器_VSpliterCtrl_10/Atlas编辑器_VSpliterCtrl_24"
+  SplitOffset: 264
+  SpliterOffsetInv: true
