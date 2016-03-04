@@ -24,6 +24,87 @@ public class AssetChcekerControllor{
 
     public static void InitControls(EditorRoot root)
     {
-        
+        /*将编辑器分为上下两个区域*/
+        HSpliterCtrl Upanddown = new HSpliterCtrl();
+        root.RootCtrl = Upanddown;
+        Upanddown.layoutConstraint = LayoutConstraint.GetSpliterConstraint(30f);
+
+        #region 编辑器的上边
+        /*存放上方资源的容器*/
+        HBoxCtrl upspliter = new HBoxCtrl();
+        Upanddown.Add(upspliter);
+
+        /*扫描资源按钮*/
+        Rect SearchBtnRect = new Rect(0, 0, 120, 20);
+        ButtonCtrl SearchBtn = new ButtonCtrl();
+        SearchBtn.onClick = SearchBtnClickEvent;
+        SearchBtn.Size = SearchBtnRect;
+        SearchBtn.Visiable = true;
+        SearchBtn.Caption = "扫描资源";
+        SearchBtn.Name = "_SearchButton";
+
+        /*数据库状态显示*/
+        LabelCtrl StateLabel = new LabelCtrl();
+        StateLabel.Caption = "数据库没有更新，请点击刷新资源数据库";
+        StateLabel.Name = "_StateLabel";
+
+        /*将空间放入上方资源*/
+        upspliter.Add(SearchBtn);
+        upspliter.Add(StateLabel);
+        #endregion
+
+        #region 编辑器的下边
+        /*将下放资源分为两个区域*/
+        VSpliterCtrl downspliter = new VSpliterCtrl();
+        Upanddown.Add(downspliter);
+        downspliter.layoutConstraint = LayoutConstraint.GetSpliterConstraint(300f);
+        downspliter.Dragable = true;
+
+        /*存放左侧资源列表和无引用资源的容器*/
+        VBoxCtrl LeftAssetContainer = new VBoxCtrl();
+        downspliter.Add(LeftAssetContainer);
+
+        /*左侧两枚选项卡*/
+        TabViewCtrl leftTabView = new TabViewCtrl();
+        LeftAssetContainer.Add(leftTabView);
+
+        /*资源列表*/
+        TreeViewCtrl AssetsTreeView = new TreeViewCtrl();
+        AssetsTreeView.Caption = "资源列表";
+        AssetsTreeView.Name = "_AssetList";
+        leftTabView.Add(AssetsTreeView);
+
+        /*无用资源列表*/
+        ListViewCtrl UseLessAssetsList = new ListViewCtrl();
+        UseLessAssetsList.Caption = "无用资源列表";
+        UseLessAssetsList.Name = "_UseLessAssetsList";
+        leftTabView.Add(UseLessAssetsList);
+
+        /*存放正向反向资源依赖关系的容器*/
+        VBoxCtrl RightAssetDependceContainer = new VBoxCtrl();
+        downspliter.Add(RightAssetDependceContainer);
+
+        /*右侧两枚选项卡*/
+        TabViewCtrl rightTabView = new TabViewCtrl();
+        RightAssetDependceContainer.Add(rightTabView);
+
+        /*资源正向依赖关系列表*/
+        ListViewCtrl DependcyAssetsList = new ListViewCtrl();
+        DependcyAssetsList.Caption = "资源正向依赖关系";
+        DependcyAssetsList.Name = "_DependAssetsList";
+        rightTabView.Add(DependcyAssetsList);
+
+        /*资源反向依赖关系列表*/
+        ListViewCtrl DedependcyAssetsList = new ListViewCtrl();
+        DedependcyAssetsList.Caption = "资源反向依赖关系";
+        DedependcyAssetsList.Name = "_DedependcyAssetsList";
+        rightTabView.Add(DedependcyAssetsList);
+        #endregion
     }
+
+    static void SearchBtnClickEvent(EditorControl c)
+    {
+        Debug.Log("SearchBtn_OnClick!");
+    }
+
 }
