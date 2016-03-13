@@ -1,5 +1,9 @@
 XPox: 175
-YPox: 90
-Width: 1032
-Height: 463
-DivisionInfo: []
+YPox: 171
+Width: 885
+Height: 687
+DivisionInfo:
+- SpliterID: "资源管理配置工具_HSpliterCtrl_6"
+  SpliterPath: "资源管理配置工具_HSpliterCtrl_6"
+  SplitOffset: 30
+  SpliterOffsetInv: true

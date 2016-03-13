@@ -29,6 +29,11 @@ public class AssetChcekerControllor{
         root.RootCtrl = Upanddown;
         Upanddown.layoutConstraint = LayoutConstraint.GetSpliterConstraint(30f);
 
+        #region 编辑器事件回调
+        root.onEnable = EditorWindowOnEnable;
+        root.onDestroy = EditorWindowOnDestroy;
+        #endregion
+
         #region 编辑器的上边
         /*存放上方资源的容器*/
         HBoxCtrl upspliter = new HBoxCtrl();
@@ -102,9 +107,19 @@ public class AssetChcekerControllor{
         #endregion
     }
 
-    static void SearchBtnClickEvent(EditorControl c)
+    static void SearchBtnClickEvent(EditorControl ec)
     {
         Debug.Log("SearchBtn_OnClick!");
+    }
+
+    static void EditorWindowOnEnable(EditorRoot er)
+    {
+        Debug.Log("EditorWindow Enable!");
+    }
+
+    static void EditorWindowOnDestroy(EditorRoot er)
+    {
+        Debug.Log("EditorWindow OnDestroy!");
     }
 
 }
