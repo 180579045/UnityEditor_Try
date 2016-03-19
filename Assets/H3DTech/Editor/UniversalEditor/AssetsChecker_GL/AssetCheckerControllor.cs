@@ -31,9 +31,9 @@ public class AssetChcekerControllor{
 
         #region 编辑器事件回调
         /*编辑器初始化事件*/
-        root.onEnable = EditorWindowOnEnable;
+        root.onEnable += EditorWindowOnEnable;
         /*编辑器关闭事件*/
-        root.onDestroy = EditorWindowOnDestroy;
+        root.onDestroy += EditorWindowOnDestroy;
         #endregion
 
         #region 编辑器的上边
@@ -42,7 +42,7 @@ public class AssetChcekerControllor{
         Upanddown.Add(upspliter);
 
         /*扫描资源按钮*/
-        Rect SearchBtnRect = new Rect(0, 0, 120, 20);
+        Rect SearchBtnRect = new Rect(0, 0, 160, 20);
         ButtonCtrl SearchBtn = new ButtonCtrl();
         SearchBtn.onClick = SearchBtnClickEvent;
         SearchBtn.Size = SearchBtnRect;
@@ -55,6 +55,7 @@ public class AssetChcekerControllor{
         ComboBoxCtrl<int> TypeFliter = new ComboBoxCtrl<int>(0);
         TypeFliter.Size = ComboxFliterRect;
         TypeFliter.Name = "_TypeFliter";
+        TypeFliter.onValueChange += FilterOnchange;
         
         for(int i = 0; i <= 3; i++)
         {
@@ -126,9 +127,10 @@ public class AssetChcekerControllor{
         #endregion
     }
 
+    //点击扫描资源按钮事件
     static void SearchBtnClickEvent(EditorControl ec)
     {
-        Debug.Log("SearchBtn_OnClick!");
+
     }
 
     static void EditorWindowOnEnable(EditorRoot er)
@@ -139,6 +141,10 @@ public class AssetChcekerControllor{
     static void EditorWindowOnDestroy(EditorRoot er)
     {
         Debug.Log("EditorWindow OnDestroy!");
+    }
+    static void FilterOnchange(EditorControl Ec, object o)
+    {
+        //Debug.Log("Filteronchange!" + o);
     }
 
 }
