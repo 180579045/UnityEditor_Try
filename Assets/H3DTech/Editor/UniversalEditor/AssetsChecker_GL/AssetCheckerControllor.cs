@@ -30,7 +30,9 @@ public class AssetChcekerControllor{
         Upanddown.layoutConstraint = LayoutConstraint.GetSpliterConstraint(30f);
 
         #region 编辑器事件回调
+        /*编辑器初始化事件*/
         root.onEnable = EditorWindowOnEnable;
+        /*编辑器关闭事件*/
         root.onDestroy = EditorWindowOnDestroy;
         #endregion
 
@@ -48,18 +50,35 @@ public class AssetChcekerControllor{
         SearchBtn.Caption = "扫描资源";
         SearchBtn.Name = "_SearchButton";
 
+        /*下拉菜单，过滤器*/
+        Rect ComboxFliterRect = new Rect(0, 0, 120, 20);
+        ComboBoxCtrl<int> TypeFliter = new ComboBoxCtrl<int>(0);
+        TypeFliter.Size = ComboxFliterRect;
+        TypeFliter.Name = "_TypeFliter";
+        
+        for(int i = 0; i <= 3; i++)
+        {
+            TypeFliter.AddItem(new ComboItem("选项1", 0));
+            TypeFliter.AddItem(new ComboItem("选项2", 1));
+            TypeFliter.AddItem(new ComboItem("选项3", 2));
+            TypeFliter.AddItem(new ComboItem("选项4", 3));
+        }
+
+        TypeFliter.CurrValue = 0;
+
         /*数据库状态显示*/
         LabelCtrl StateLabel = new LabelCtrl();
         StateLabel.Caption = "数据库没有更新，请点击刷新资源数据库";
         StateLabel.Name = "_StateLabel";
 
-        /*将空间放入上方资源*/
+        /*将控件放入上方资源*/
         upspliter.Add(SearchBtn);
+        upspliter.Add(TypeFliter);
         upspliter.Add(StateLabel);
         #endregion
 
         #region 编辑器的下边
-        /*将下放资源分为两个区域*/
+        /*将下放资源分为左右两个区域*/
         VSpliterCtrl downspliter = new VSpliterCtrl();
         Upanddown.Add(downspliter);
         downspliter.layoutConstraint = LayoutConstraint.GetSpliterConstraint(300f);
@@ -81,7 +100,7 @@ public class AssetChcekerControllor{
 
         /*无用资源列表*/
         ListViewCtrl UseLessAssetsList = new ListViewCtrl();
-        UseLessAssetsList.Caption = "无用资源列表";
+        UseLessAssetsList.Caption = "无用资源";
         UseLessAssetsList.Name = "_UseLessAssetsList";
         leftTabView.Add(UseLessAssetsList);
 
@@ -95,13 +114,13 @@ public class AssetChcekerControllor{
 
         /*资源正向依赖关系列表*/
         ListViewCtrl DependcyAssetsList = new ListViewCtrl();
-        DependcyAssetsList.Caption = "资源正向依赖关系";
+        DependcyAssetsList.Caption = "正向依赖关系";
         DependcyAssetsList.Name = "_DependAssetsList";
         rightTabView.Add(DependcyAssetsList);
 
         /*资源反向依赖关系列表*/
         ListViewCtrl DedependcyAssetsList = new ListViewCtrl();
-        DedependcyAssetsList.Caption = "资源反向依赖关系";
+        DedependcyAssetsList.Caption = "反向依赖关系";
         DedependcyAssetsList.Name = "_DedependcyAssetsList";
         rightTabView.Add(DedependcyAssetsList);
         #endregion
