@@ -122,14 +122,12 @@ public class ResourceRefTool
         searchBtn.Visiable = true;
 
         Rect comboBoxRect = new Rect(0, 0, 100, 20);
-
         ComboBoxCtrl<int> assetTypeCombo = new ComboBoxCtrl<int>(0);
         assetTypeCombo.Size = comboBoxRect;
         assetTypeCombo.Name = "_AssetTypeCombo";
         assetTypeCombo.onValueChange = OnFilterComboSelectChanged;
 
-        List<IAssetFilter> assetFilters = 
-        ResourceManageToolModel.GetInstance().AssetFilterList;
+        List<IAssetFilter> assetFilters = ResourceManageToolModel.GetInstance().AssetFilterList;
         foreach( var filter in assetFilters )
         {
             AssetTypeFilter f = filter as AssetTypeFilter;
