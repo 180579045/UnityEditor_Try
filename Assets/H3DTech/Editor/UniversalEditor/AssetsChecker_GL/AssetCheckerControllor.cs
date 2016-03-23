@@ -59,10 +59,10 @@ public class AssetChcekerControllor{
         
         for(int i = 0; i <= 3; i++)
         {
-            TypeFliter.AddItem(new ComboItem("选项1", 0));
-            TypeFliter.AddItem(new ComboItem("选项2", 1));
-            TypeFliter.AddItem(new ComboItem("选项3", 2));
-            TypeFliter.AddItem(new ComboItem("选项4", 3));
+            TypeFliter.AddItem(new ComboItem("选项0", 0));
+            TypeFliter.AddItem(new ComboItem("选项1", 1));
+            TypeFliter.AddItem(new ComboItem("选项2", 2));
+            TypeFliter.AddItem(new ComboItem("选项3", 3));
         }
 
         TypeFliter.CurrValue = 0;
